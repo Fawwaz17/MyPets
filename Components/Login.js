@@ -3,6 +3,8 @@ import {
     StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity, Alert
 } from 'react-native';
 import Judul1 from './Judul1';
+import PasswordInputText from 'react-native-hide-show-password-input';
+
 export default class Login extends Component{
     render(){
         return(
@@ -19,6 +21,7 @@ export default class Login extends Component{
 
                 <TextInput
                     style={{height: 40, width : 250,marginTop:20, marginBottom:30, backgroundColor: 'white'}}
+                    secureTextEntry
                     placeholder ="    Password"
                     onChangeText={(password) => this.setState({password})}
                 />
@@ -59,4 +62,3 @@ const styles = StyleSheet.create({
       marginTop : 50,
     }
 });
-

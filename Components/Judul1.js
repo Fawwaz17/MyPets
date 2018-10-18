@@ -12,7 +12,7 @@ export default class Judul1 extends Component{
 				<View style={styles.container}>
 					<Text style={warna.wn}> Welcome To MyPets, Hope you enjoy it. Lina </Text>
 					<Text style={{ marginBottom : 400}}></Text>
-					<Button title="					Next					" color="#cd5555" onPress ={() => {this.redirect()}}/>
+					<Button title="					Next					" color="#cd5555" onPress ={() =>{this.props.navigation.navigate('Biodata')}}/>
 				</View>
 			)
 	}

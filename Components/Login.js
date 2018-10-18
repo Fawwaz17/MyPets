@@ -3,7 +3,6 @@ import {
     StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity, Alert
 } from 'react-native';
 import Judul1 from './Judul1';
-import PasswordInputText from 'react-native-hide-show-password-input';
 
 export default class Login extends Component{
     render(){

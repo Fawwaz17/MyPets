@@ -2,6 +2,7 @@ import React,{Component}from 'react';
 import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 
 export default class Judul1 extends Component{
+	static navigationOptions = { header: null };
 	redirect()
 	{
 		Alert.alert("This Button is ready")
@@ -10,7 +11,7 @@ export default class Judul1 extends Component{
 	render(){
 		return(
 				<View style={styles.container}>
-					<Text style={warna.wn}> Welcome To MyPets, Hope you enjoy it. Lina </Text>
+					<Text style={warna.wn}> Welcome To MyPets, Hope you enjoy it.</Text>
 					<Text style={{ marginBottom : 400}}></Text>
 					<Button title="					Next					" color="#cd5555" onPress ={() =>{this.props.navigation.navigate('Biodata')}}/>
 				</View>

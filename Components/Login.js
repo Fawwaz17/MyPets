@@ -5,6 +5,7 @@ import {
 import Judul1 from './Judul1';
 
 export default class Login extends Component{
+    static navigationOptions = { header: null };
     render(){
         return(
             <View style = {styles.container}>
@@ -39,7 +40,7 @@ export default class Login extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex:3,
+        flex:1,
         backgroundColor:'#f87d42',
         justifyContent: 'center',
         alignItems: 'center',
